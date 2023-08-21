@@ -1,0 +1,40 @@
+# Gradle related files
+.gradle/
+build/
+
+# IDE specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+log/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Gradle wrapper files
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Compiled files
+/bin/
+/target/
