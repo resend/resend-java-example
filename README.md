@@ -14,7 +14,7 @@ To get the most out of this guide, you’ll need to:
 1. Add the dependecy to your project:
 
 ```
-implementation 'com.resend:resend-java:1.0.0'
+implementation 'com.resend:resend-java:2.0.0'
 ```
 
 Maven:
@@ -23,31 +23,14 @@ Maven:
 <dependency>
     <groupId>com.resend</groupId>
     <artifactId>resend-java</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
 </dependency>
 ```
 
-2. Set the API Key via environment variable or programmatically:
+2. Replace ```re_123456789``` on Main with your API key.
 
-Environment variables:
-```sh
-export RESEND_API_KEY="re_123456789"
-```
 
-Instantiate the ResendEmails with empty constructor:
-```
-ResendEmails emailClient = new ResendEmails();
-```
-
-Programmatically: 
-
-```
-String apiKey = "re_123";
-
-AuthenticationProvider provider = new AuthenticationProviderStandard(apiKey);
-ResendEmails emailClient = new ResendEmails(provider);
-```
-3. Execute the project
+3. Execute the project by running the Main class
 
 ## License
 
