@@ -12,10 +12,11 @@ public class FileUtils {
 
     private static byte[] loadResourceFile(String filename) throws IOException {
         ClassLoader classLoader = FileUtils.class.getClassLoader();
-        InputStream inputStream = classLoader.getResourceAsStream(filename);
-        if (inputStream == null) {
-            throw new IOException("Resource not found: " + filename);
+        try (InputStream inputStream = classLoader.getResourceAsStream(filename)) {
+            if (inputStream == null) {
+                throw new IOException("Resource not found: " + filename);
+            }
+            return inputStream.readAllBytes();
         }
-        return inputStream.readAllBytes();
     }
 }
