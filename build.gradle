@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.13.2'
 
     // https://mvnrepository.com/artifact/com.resend/resend-java
     implementation 'com.resend:resend-java:2.0.0'
